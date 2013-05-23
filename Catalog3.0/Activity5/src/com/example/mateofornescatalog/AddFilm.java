@@ -1,11 +1,11 @@
 /*---------------------------------------------------------------
-Pr‡ctica V Tutorial Android
+Prï¿½ctica V Tutorial Android
 Codi Font : AddFilm.java
 Master en Informatica
 47903898G Mateo Fornes, Jordi
-Descripci—n breve del codigo/fichero:
-Permite introducir el t’tulo, la descripci—n, la calificaci—n y
-si el usuario ha visto/ho quiere ver la pel’cula.
+Descripciï¿½n breve del codigo/fichero:
+Permite introducir el tï¿½tulo, la descripciï¿½n, la calificaciï¿½n y
+si el usuario ha visto/ho quiere ver la pelï¿½cula.
 --------------------------------------------------------------- */
 
 package com.example.mateofornescatalog;
@@ -134,7 +134,11 @@ public class AddFilm extends Activity {
         AlertDialog alert1 = alert.create();
         alert1.show();
     }
-
+    
+    //Aquest mÃ¨tode s'ha de sobreescriure quan es vol fer Ãºs del menÃº d'opcions
+    //rÃ pides de l'aplicaciÃ³ Android. Si no s'utilitza el menu, no s'ha de 
+    //sobreescriure el mÃ¨tode perquÃ¨ llavors mostrarÃ  el menÃº amb una opciÃ³ per
+    //defecte (Settings) que no tindrÃ  cap funcionalitat.
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.activity_add_film, menu);
