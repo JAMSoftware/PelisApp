@@ -1,10 +1,10 @@
 /*---------------------------------------------------------------
-Pr‡ctica V Tutorial Android
+Prï¿½ctica V Tutorial Android
 Codi Font : MovieCatalogService.java
 Master en Informatica
 47903898G Mateo Fornes, Jordi
-Descripci—n breve del codigo/fichero:
-Servicio que contiene la base de datos de las pel’culas.
+Descripciï¿½n breve del codigo/fichero:
+Servicio que contiene la base de datos de las pelï¿½culas.
 --------------------------------------------------------------- */
 
 package com.example.mateofornescatalog;
@@ -124,6 +124,9 @@ public class MovieCatalogService extends Service {
 	        					e.printStackTrace();
 	        				}   	                	
 	                    }
+	                    //Aqui tanques la DB, perÃ² enlloc la tornes a obrir. 
+	                    //Si intentes llegir de DB desprÃ©s d'executar aquesta
+	                    //funciÃ³, et trobarÃ s amb una DB tancaca i rebras una ExcepciÃ³.
 	                    db.close();
 	                    try {
 	        				oStream.flush();
