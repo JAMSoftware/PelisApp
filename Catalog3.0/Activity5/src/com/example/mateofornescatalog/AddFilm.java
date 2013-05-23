@@ -1,11 +1,11 @@
 /*---------------------------------------------------------------
-Pr‡ctica V Tutorial Android
+Prï¿½ctica V Tutorial Android
 Codi Font : AddFilm.java
 Master en Informatica
 47903898G Mateo Fornes, Jordi
-Descripci—n breve del codigo/fichero:
-Permite introducir el t’tulo, la descripci—n, la calificaci—n y
-si el usuario ha visto/ho quiere ver la pel’cula.
+Descripciï¿½n breve del codigo/fichero:
+Permite introducir el tï¿½tulo, la descripciï¿½n, la calificaciï¿½n y
+si el usuario ha visto/ho quiere ver la pelï¿½cula.
 --------------------------------------------------------------- */
 
 package com.example.mateofornescatalog;
@@ -102,7 +102,10 @@ public class AddFilm extends Activity {
         });
         
     }
-    
+    //Aquests dos mÃ©todes (alertbox1 i alertbox2) sÃ³n idÃ¨ntics, 
+    //nomÃ©s varia l'string que es mostra. Caldria convertir-los 
+    //en un i passar la referÃ¨ncia a la cadena per parÃ metre:
+    //public void alertbox(int stringReference)
     public void alertbox1() 
     {
     	Builder alert = new AlertDialog.Builder(AddFilm.this);
