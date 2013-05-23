@@ -1,10 +1,10 @@
 /*---------------------------------------------------------------
-Pr‡ctica V Tutorial Android
+Prï¿½ctica V Tutorial Android
 Codi Font : MovieCatalogService.java
 Master en Informatica
 47903898G Mateo Fornes, Jordi
-Descripci—n breve del codigo/fichero:
-Servicio que contiene la base de datos de las pel’culas.
+Descripciï¿½n breve del codigo/fichero:
+Servicio que contiene la base de datos de las pelï¿½culas.
 --------------------------------------------------------------- */
 
 package com.example.mateofornescatalog;
@@ -105,6 +105,7 @@ public class MovieCatalogService extends Service {
 	                        Log.v("IO Exception", e.getMessage());
 	                    }
 	                    try {
+	                    			//No controles que fStream pugui ser null
 	        				oStream = new ObjectOutputStream(fStream);
 	        			} catch (IOException e2) {
 	        				e2.printStackTrace();
@@ -114,6 +115,7 @@ public class MovieCatalogService extends Service {
 	                        String key=(String)myVeryOwnIterator.next();
 	                        Movie value=(Movie) movies.getMovies().get(key);
 	                        try {
+	                        			//No controles que ostream pot ser null, NullPointerException
 	        					oStream.writeObject(value);
 	        					ContentValues values = new ContentValues();
 	        					values.put("name", value.getName());
