@@ -1,10 +1,10 @@
 /*---------------------------------------------------------------
-Pr‡ctica V Tutorial Android
+Prï¿½ctica V Tutorial Android
 Codi Font : MovieMessageParcelable.java
 Master en Informatica
 47903898G Mateo Fornes, Jordi
-Descripci—n breve del codigo/fichero:
-Clase que permite enviar mensaje compriemiendo las pel’culas
+Descripciï¿½n breve del codigo/fichero:
+Clase que permite enviar mensaje compriemiendo las pelï¿½culas
 como android requiere.
 --------------------------------------------------------------- */
 
@@ -15,6 +15,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
 
+//Duplicitat de classes
 public class MovieMessageParceable implements Parcelable {
 	static final long serialVersionUID = 1 ;
 	
