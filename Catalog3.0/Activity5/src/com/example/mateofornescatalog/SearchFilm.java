@@ -1,11 +1,11 @@
 /*---------------------------------------------------------------
-Pr‡ctica V Tutorial Android
+Prï¿½ctica V Tutorial Android
 Codi Font : SearchFilm.java
 Master en Informatica
 47903898G Mateo Fornes, Jordi
-Descripci—n breve del codigo/fichero:
-Permite al usuario la bœsqueda de una pel’cula introduciendo su
-t’tulo.
+Descripciï¿½n breve del codigo/fichero:
+Permite al usuario la bï¿½squeda de una pelï¿½cula introduciendo su
+tï¿½tulo.
 --------------------------------------------------------------- */
 
 package com.example.mateofornescatalog;
@@ -47,6 +47,11 @@ public class SearchFilm extends Activity{
 	public MovieCatalogService myService;
 	public boolean mBounded;
 	static final String UserName = "ActivityUser";	
+	//Quan necessites cridar al Servei d'Android has de crear tots aquests 
+	//mÃ¨todes (Messengers, ServiceConnection, onBind...). Lo millor seria crear
+	//una classe que extengues Activity i implementes tots aquests mÃ¨todes. Llavors, 
+	//nomÃ©s caldria que les Activitats que haguessin de fer us del Servei extenguesin MyActivity
+	//enlloc d'Activity, i no caldria defenir els mÃ¨todes i atributs cada vegada.
     static Messenger mService = null;
 
     final  Messenger mMessenger = new Messenger(new IncomingHandler());
